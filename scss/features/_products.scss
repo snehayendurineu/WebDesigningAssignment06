@@ -1,0 +1,66 @@
+$background-color: black;
+$color: white;
+$font-family: 'Arial', sans-serif;
+
+
+@function adjust-color($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+
+@mixin prefix($property, $value) {
+  #{$property}: $value;
+}
+
+.product_container {
+  display: flex;
+  justify-content: flex-start;
+  
+  &_info {
+    background-color: black;
+    display: grid;
+    padding: 3rem;
+    
+    h1, h2, p {
+      font-family: $font-family;
+      color: $color;
+      font-weight: 500;
+    }
+  }
+}
+
+.products, .products_storage {
+  @include prefix(display, grid);
+  @include prefix(padding, 4rem);
+  @include prefix(font-family, $font-family);
+  
+  .product_list_memory {
+    @include prefix(display, grid);
+    @include prefix(grid-template-columns, repeat(2, 1fr));
+  }
+  
+  h2 {
+    color: adjust-color(#6800b7, 20%); 
+  }
+  
+  select {
+    @include prefix(color, #6800b7);
+    @include prefix(width, 90%);
+    @include prefix(padding, 0.5rem);
+    @include prefix(border-radius, 5px);
+    @include prefix(font-size, 1rem);
+  }
+  
+  .product_list_memory_items {
+    @include prefix(padding, 1.5rem);
+  }
+}
+
+.products {
+  background-color: adjust-color($color, 10%); 
+}
+
+.products_storage {
+  background-color: black;
+  color: white;
+}

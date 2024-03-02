@@ -1,0 +1,305 @@
+html {
+  width: auto;
+  height: auto;
+}
+html body {
+  background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+}
+
+.route, .route-hidden {
+  display: inline-block;
+}
+
+.route, .route-hidden, .dropdown-button {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  height: 85px;
+  background-image: linear-gradient(to right, #a706ce, #8800c3, #6800b7, #4300aa, #01009d);
+  font-family: "Arial", sans-serif;
+}
+
+.more-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-image: linear-gradient(to right, #a706ce, #8800c3, #6800b7, #4300aa, #01009d);
+}
+
+.route, .route-hidden {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.route-hidden {
+  display: block;
+}
+
+.route {
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  width: 85%;
+}
+
+.dropdown-menu:hover .more-content {
+  display: block;
+}
+
+.dropdown-menu:hover .dropdown-button {
+  background-image: linear-gradient(to right, #a706ce, #8800c3, #6800b7, #4300aa, #01009d);
+}
+
+nav {
+  flex: content;
+  justify-content: space-evenly;
+}
+
+.container {
+  position: relative;
+}
+.container video {
+  z-index: 0;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 200px;
+  text-align: center;
+  padding-left: 500px;
+}
+.overlay h1 {
+  font-family: "Arial", sans-serif;
+  color: white;
+  align-items: center;
+}
+.overlay a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.875rem 1.25rem;
+  border: 0.125rem solid white;
+  border-radius: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  transition: color 0.25s;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  letter-spacing: 0.15em;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.news_item, .tech_news_container .news_items {
+  display: flex;
+}
+.news_item h2, .tech_news_container .news_items h2, .news_item h3, .tech_news_container .news_items h3, .news_item h4, .tech_news_container .news_items h4, .news_item p, .tech_news_container .news_items p {
+  font-family: "Arial", sans-serif;
+}
+.news_item h2, .tech_news_container .news_items h2 {
+  color: #6800b7;
+}
+.news_item .news_image, .tech_news_container .news_items .news_image {
+  width: 340px;
+  height: 340px;
+  padding: 20px;
+}
+.news_item .arrow_forward, .tech_news_container .news_items .arrow_forward {
+  width: 100px;
+}
+.news_item:hover, .tech_news_container .news_items:hover {
+  border: 1px solid white;
+}
+.news_item .news_image:hover, .tech_news_container .news_items .news_image:hover {
+  width: 360px;
+  height: 360px;
+  transition: 1s;
+}
+.news_item .arrow_forward:hover, .tech_news_container .news_items .arrow_forward:hover {
+  width: 120px;
+}
+
+.tech_news_container {
+  background-color: white;
+  padding: 3rem;
+  color: black;
+}
+.tech_news_container .news_items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.banner {
+  background-image: linear-gradient(to right, #a706ce, #8800c3, #6800b7, #4300aa, #01009d);
+  padding: 4rem;
+}
+.banner h1, .banner p {
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+.banner a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.875rem 1.25rem;
+  border: 0.125rem solid white;
+  border-radius: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  transition: color 0.25s;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.hardware_container {
+  padding: 4rem;
+  background-color: white;
+}
+.hardware_container h1, .hardware_container p, .hardware_container h3 {
+  font-family: "Arial", sans-serif;
+}
+
+.hardware_items {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 50px;
+}
+.hardware_items .hardware_videos {
+  height: 50%;
+}
+.hardware_items .hardware_arrow_icon {
+  width: 70px;
+}
+.hardware_items .hardware_arrow_icon:hover {
+  width: 85px;
+}
+
+.hardware_item {
+  padding: 10px;
+  height: 250px;
+}
+
+.footer {
+  background-image: linear-gradient(to right, #a706ce, #8800c3, #6800b7, #4300aa, #01009d);
+  display: grid;
+  color: white;
+  font-family: "Helvetica", sans-serif;
+  padding: 4rem;
+}
+.footer .footer_navigation {
+  display: flex;
+}
+.footer .footer_navigation_links {
+  padding: 1rem;
+}
+.footer .footer_navigation_links_right {
+  padding: 1rem;
+  padding-left: 650px;
+}
+.footer .footer_navigation_links_right a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.875rem 1.25rem;
+  border: 0.125rem solid white;
+  border-radius: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  transition: color 0.25s;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  letter-spacing: 0.15em;
+  font-family: "Helvetica", sans-serif;
+  color: white;
+}
+.footer .footer_logo {
+  text-align: center;
+  border-radius: 100%;
+}
+.footer img {
+  width: 600px;
+}
+.footer .footer_documentation {
+  display: flex;
+  padding-left: 490px;
+}
+.footer .footer_documentation_links {
+  padding: 1rem;
+  text-align: center;
+}
+.footer .footer_description {
+  text-align: center;
+}
+
+.product_container {
+  display: flex;
+  justify-content: flex-start;
+}
+.product_container_info {
+  background-color: black;
+  display: grid;
+  padding: 3rem;
+}
+.product_container_info h1, .product_container_info h2, .product_container_info p {
+  font-family: "Arial", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.products, .products_storage {
+  display: grid;
+  padding: 4rem;
+  font-family: "Arial", sans-serif;
+}
+.products .product_list_memory, .products_storage .product_list_memory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.products h2, .products_storage h2 {
+  color: #8633c5;
+}
+.products select, .products_storage select {
+  color: #6800b7;
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.products .product_list_memory_items, .products_storage .product_list_memory_items {
+  padding: 1.5rem;
+}
+
+.products {
+  background-color: white;
+}
+
+.products_storage {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
